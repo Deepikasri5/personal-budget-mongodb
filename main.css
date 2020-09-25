@@ -7,22 +7,22 @@ body {
     font-family: Tahoma, Arial;
 }
 
-div.menu {
+nav.menu {
     width: 100%;
     background-color: #4d5791;
     height: 44px;
     padding: 0 40px;
 }
 
-div.menu ul,
-div.menu ul li {
+nav.menu ul,
+nav.menu ul li {
     margin: 0;
     padding: 0 ;
     list-style: none;
     display: inline-block;
 }
 
-div.menu ul li a {
+nav.menu ul li a {
     display: block;
     padding: 0 20px;
     line-height: 44px;
@@ -83,13 +83,28 @@ div.hero h2 {
     text-align: center;
 }
 
-.container div.text-box {
+.container article.text-box {
     display: inline-block;
     width: 100%;
     max-width: 340px;
     text-align: justify;
     margin: 20px;
 }
+#git{
+    right: 0;
+    position: absolute;
+    margin-right: 15px;
+    font-size: 12px;
+}
+#tarImg {
+    width: 15%;
+    height: 9%;
+    background-color: #b4c6f0;
+  }
+  form{
+      background-color: #b4c6f0;
+
+  }
 
 @media screen and (min-width: 768px) {
     .container .div.text-box {
