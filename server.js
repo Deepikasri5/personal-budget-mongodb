@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const fs = require('fs');
+var budgetData = fs.readFileSync("budget.json", "utf-8");
+var budgetjson = JSON.parse(budgetData);
 
 app.use('/', express.static('public'));
 
@@ -27,7 +30,7 @@ app.get('/hello', (req,res) => {
 });
 
 app.get('/budget', (req, res) => {
-    res.json(budget);
+    res.json(budgetjson);
 });
 
 
