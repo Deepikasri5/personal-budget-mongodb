@@ -7,27 +7,6 @@ var budgetjson = JSON.parse(budgetData);
 
 app.use('/', express.static('public'));
 
-const budget = {
-    myBudget: [
-    {
-        title: 'Eat out',
-        budget: 25
-    },
-    {
-        title: 'rent',
-        budget: 375
-    },
-    {
-        title:'Grocery',
-        budget: 110
-    },
-]
-};
-
-
-app.get('/hello', (req,res) => {
-    res.send('Hello world!');
-});
 
 app.get('/budget', (req, res) => {
     res.json(budgetjson);
@@ -35,5 +14,5 @@ app.get('/budget', (req, res) => {
 
 
 app.listen(port, () => {
-console.log('serving at : ',port);
+console.log(`Server Running on Port: http://localhost:${port}`);
 });
